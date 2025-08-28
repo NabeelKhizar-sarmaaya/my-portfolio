@@ -189,6 +189,10 @@ section {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+
+  section h2 {
+    text-align: center !important;
+  }
   .slide {
     width: 120px;
   }

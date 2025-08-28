@@ -73,6 +73,9 @@ section {
 }
 
 /* About Section */
+#about h2 {
+    font-size: 2.5rem;
+}
 #about .about-content {
   display: flex;
   align-items: center;
@@ -171,7 +174,7 @@ section {
 }
 
 .prev { left: 10px; }
-.next { right: 10px; }
+.next { right: 0px; }
 
 
 /* Responsive Design */
@@ -184,9 +187,30 @@ section {
     width: 70px;
     height: 70px;
   }
+  .prev { left: 0px; }
+
+  #hero {
+    padding: 60px 0 ;
+  }
+  #about {
+    padding: 40px 0 ;
+  }
+  #skills {
+    padding: 40px 0 ;
+  }
+  #services {
+    padding: 40px 0;
+  }
+  #contact {
+    padding: 40px 0;
+  }
 }
 
 /* Services Section */
+#services h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
 #services .services-grid {
   padding-top: 20px;
   display: grid;
@@ -197,6 +221,18 @@ section {
 @media screen and (max-width: 420px) {
     #services .services-grid {
         grid-template-columns: auto !important;
+    }
+    #services h2 {
+        font-size: 2rem;
+    }
+    #about h2 {
+        font-size: 2rem;
+    }
+    #skills h2 {
+        font-size: 2rem;
+    }
+    #hero h1 {
+        font-size: 2.5rem;
     }
 }
 #services .service {

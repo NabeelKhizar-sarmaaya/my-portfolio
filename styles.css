@@ -18,7 +18,7 @@ body {
 
 /* Global Container */
 .container {
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -36,7 +36,8 @@ section {
 
 /* Hero Section */
 #hero {
-  background: linear-gradient(135deg, #d15e4c, #e89450);
+  background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+  /*background: linear-gradient(135deg, #d15e4c, #e89450);*/
   color: white;
   text-align: center;
   padding: 120px 0;
@@ -84,6 +85,9 @@ section {
 }
 .about_text {
     text-align: center;
+}
+#about h2 {
+    text-align: justify;
 }
 #about .about-content .text {
   flex: 1;
@@ -205,6 +209,72 @@ section {
     padding: 40px 0;
   }
 }
+/* Projects Section */
+#projects {
+  background-color: linear-gradient(135deg, #ffe5b4, #fff9c4);
+  padding: 60px 0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  transition: transform 0.3s ease;
+}
+
+.projects-grid .project {
+  background: linear-gradient(135deg, #a8edea, #fed6e3); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projects-grid .project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.projects-grid .project h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.projects-grid .project p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Design for Smaller Screens */
+@media screen and (max-width: 768px) {
+  #projects .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  #projects .projects-grid {
+    grid-template-columns: auto !important;
+  }
+
+  #projects h2 {
+    font-size: 2rem;
+  }
+}
+
 
 /* Services Section */
 #services h2 {
@@ -218,7 +288,7 @@ section {
   gap: 30px;
   transition: transform 0.3s ease;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 500px) {
     #services .services-grid {
         grid-template-columns: auto !important;
     }
@@ -236,7 +306,7 @@ section {
     }
 }
 #services .service {
-  background-color: white;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -253,7 +323,7 @@ section {
   max-width: 600px;
   margin: 0 auto;
   padding: 30px;
-  background-color: #fff;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

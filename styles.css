@@ -196,7 +196,7 @@ section {
 }
 @media screen and (max-width: 420px) {
     #services .services-grid {
-        grid-template-columns: auto;
+        grid-template-columns: auto !important;
     }
 }
 #services .service {

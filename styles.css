@@ -79,7 +79,9 @@ section {
   justify-content: space-between;
   transition: transform 0.3s ease;
 }
-
+.about_text {
+    text-align: center;
+}
 #about .about-content .text {
   flex: 1;
   margin-right: 20px;
@@ -192,7 +194,11 @@ section {
   gap: 30px;
   transition: transform 0.3s ease;
 }
-
+@media screen and (max-width: 420px) {
+    #services .services-grid {
+        grid-template-columns: auto;
+    }
+}
 #services .service {
   background-color: white;
   padding: 20px;
@@ -301,6 +307,10 @@ footer .social-links a:hover {
 
   #about .about-content {
     flex-direction: column;
+    row-gap: 30px;
+  }
+  #about .about-content .text{
+    margin: 20px;
   }
 }
 

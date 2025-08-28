@@ -5,7 +5,9 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
+h2 {
+    text-align: start;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -186,7 +188,9 @@ section {
   .slide {
     width: 120px;
   }
-
+  h2 {
+    text-align: start !important;
+  }
   .slide img {
     width: 70px;
     height: 70px;
